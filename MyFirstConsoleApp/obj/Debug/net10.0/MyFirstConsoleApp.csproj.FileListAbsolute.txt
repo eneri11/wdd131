@@ -1,0 +1,15 @@
+C:\Users\ADMIN\Desktop\GIT Repository clone\wdd130\MyFirstConsoleApp\bin\Debug\net10.0\MyFirstConsoleApp.exe
+C:\Users\ADMIN\Desktop\GIT Repository clone\wdd130\MyFirstConsoleApp\bin\Debug\net10.0\MyFirstConsoleApp.deps.json
+C:\Users\ADMIN\Desktop\GIT Repository clone\wdd130\MyFirstConsoleApp\bin\Debug\net10.0\MyFirstConsoleApp.runtimeconfig.json
+C:\Users\ADMIN\Desktop\GIT Repository clone\wdd130\MyFirstConsoleApp\bin\Debug\net10.0\MyFirstConsoleApp.dll
+C:\Users\ADMIN\Desktop\GIT Repository clone\wdd130\MyFirstConsoleApp\bin\Debug\net10.0\MyFirstConsoleApp.pdb
+C:\Users\ADMIN\Desktop\GIT Repository clone\wdd130\MyFirstConsoleApp\obj\Debug\net10.0\MyFirstConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Desktop\GIT Repository clone\wdd130\MyFirstConsoleApp\obj\Debug\net10.0\MyFirstConsoleApp.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Desktop\GIT Repository clone\wdd130\MyFirstConsoleApp\obj\Debug\net10.0\MyFirstConsoleApp.AssemblyInfo.cs
+C:\Users\ADMIN\Desktop\GIT Repository clone\wdd130\MyFirstConsoleApp\obj\Debug\net10.0\MyFirstConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\GIT Repository clone\wdd130\MyFirstConsoleApp\obj\Debug\net10.0\MyFirstConsoleApp.sourcelink.json
+C:\Users\ADMIN\Desktop\GIT Repository clone\wdd130\MyFirstConsoleApp\obj\Debug\net10.0\MyFirstConsoleApp.dll
+C:\Users\ADMIN\Desktop\GIT Repository clone\wdd130\MyFirstConsoleApp\obj\Debug\net10.0\refint\MyFirstConsoleApp.dll
+C:\Users\ADMIN\Desktop\GIT Repository clone\wdd130\MyFirstConsoleApp\obj\Debug\net10.0\MyFirstConsoleApp.pdb
+C:\Users\ADMIN\Desktop\GIT Repository clone\wdd130\MyFirstConsoleApp\obj\Debug\net10.0\MyFirstConsoleApp.genruntimeconfig.cache
+C:\Users\ADMIN\Desktop\GIT Repository clone\wdd130\MyFirstConsoleApp\obj\Debug\net10.0\ref\MyFirstConsoleApp.dll
