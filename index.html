@@ -4,66 +4,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description"
-      content="Responsive webpage layout with accessibility,hover effects, and dynamic footer dates. " />
+      content="WDD 131 Dynamic Web Fundamentals homepage with responsive layout, accessibility, and dynamic footer dates." />
     <meta name="keywords" content="HTML, CSS, Responsive Layout, Accessibility, SEO" />
+
     <meta name="author" content="Irene Costales" />
 
-    <title>Content Layout - Irene Costales WDD131</title>
-    <link rel=" stylesheet" href="styles/layout.css">
+    <title>WDD 131 - Dynamic Web Fundamentals - Irene Costales</title>
+
+    <link rel=" stylesheet" href="styles/base.css" />
+
+    <script defer src="scripts/getdates.js"> </script>
 </head>
-<header>
-    <h1 contenteditable="">Header Content</h1>
-</header>
 
 <body>
-    <div class="container"></div>
+    <header>
+        <span id="course-title">
+            WDD 131 - Dynamic Web Fundamentals
+        </span>
+    </header>
 
-</body>
-<nav aria-label="Main Navigation">
-    <ul class="navigation">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact Us</a></li>
-    </ul>
-</nav>
+    <nav aria-label="Main Navigation">
+        <ul class="navigation">
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">I-Learn</a></li>
+            <li><a href="#">Scripture</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
 
-<section class="content">
     <main>
-        <h2>Main Content</h2>
+        <h1>Irene G. Costales</h1>
+
+        <div class="card-container">
+
+            <section class="card">
+
+                <h2>About Me</h2>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <p> My name is Irene, married with four kids. I was born
+                            in the Philippines. I am currently taking up an online Degree
+                            in Software Development at BYU-Pathway Worldwide. I love to travel
+                            in different places and appreciate the wonderful creation of our
+                            Savior Jesus Christ. I also like to cook. I love music too and enjoy all
+                            genre.
+                        </p>
+                    </div>
+
+                    <img src="images/profile pic.jpg" alt="Picture of Irene G. Costales"
+                      class="profile-image" />
+                </div>
+
+                <div class="location">
+
+                    <h3>Marikina City, Philippines</h3>
+
+                    <div class="location-content">
+
+                        <figure>
+                            <img src="images/philippines_flag.webp"
+                              alt="Official flag of the Republic of the Philippines"
+                              class="flag-image" />
+
+                            <figcaption>
+                                Official Flag of the Republic of the Philippines
+                            </figcaption>
+                        </figure>
+
+                        <p> Marikina City is a highly urbanized city located in the eastern part of
+                            Metro Manila, Philippines.
+                            Known as the “Shoe Capital of the Philippines,” it is famous for its
+                            long history of shoe-making and
+                            for producing a large portion of the country’s locally made footwear.
+                            The city is also recognized
+                            for its clean streets, organized urban planning, bike-friendly roads,
+                            and strong sense of community.
+                            Marikina features attractions such as the Marikina River Park and the
+                            Shoe Museum, while balancing
+                            modern commercial areas with a peaceful residential atmosphere.
+
+                            Many people also describe Marikina as one of the cleanest and most
+                            livable cities in Metro Manila
+                            because of its disciplined traffic system, pedestrian-friendly
+                            sidewalks, and green public spaces.
+                        </p>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <aside class="card">
+
+                <h2>Web Dev Resources</h2>
+
+                <ul>
+                    <li><a href="#">Dev. to Community</a></li>
+                    <li><a href="#">Smashing Magazine</a></li>
+                    <li><a href="#">CSS Tricks</a></li>
+                    <li><a href="#">W3 Schools</a></li>
+                    <li><a href="#">Udemy</a></li>
+                    <li><a href="#">Lorem Picsum Image Placeholder</a></li>
+                </ul>
+
+            </aside>
+
+        </div>
 
     </main>
 
-    <aside>
-        <h2>Aside Content</h>
 
-    </aside>
+    <footer>
 
-</section>
-
-
-<footer>
-    <h2>Footer Content</h2>
-
-    <p>
-        &copy; <span id="year"></span> | Responsive Layout Project
-    </p>
-    <p>
+        <p>
+            &copy;
+            <span id="year"></span>
+            💠Irene Gavina Costales 💠 Philippines 🏄
+        </p>
+        <p id="lastModified"></p>>
         Last Modified:
-        <span id="lastModified"></span>
-    </p>
-</footer>
 
-<script>
-    // Dynamic Copyright Year
-    const currentYear = new Date().getFullYear();
-    document.getElementById("year").textContent = currentYear;
-
-    //Last Modified Date
-    document.getElementById("lastModified").textContent
-    document.lastModified;
-</script>
+        </p>
+    </footer>
 
 </body>
 
