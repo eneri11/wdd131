@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="description"
+      content="Responsive webpage layout with accessibility,hover effects, and dynamic footer dates. " />
+    <meta name="keywords" content="HTML, CSS, Responsive Layout, Accessibility, SEO" />
+    <meta name="author" content="Irene Costales" />
+
+    <title>Content Layout - Irene Costales WDD131</title>
+    <link rel=" stylesheet" href="styles/layout.css">
 </head>
+<header>
+    <h1 contenteditable="">Header Content</h1>
+</header>
+
 <body>
-    <H1>WDD 131 - Irene</H1>
+    <div class="container"></div>
+
 </body>
+<nav aria-label="Main Navigation">
+    <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</nav>
+
+<section class="content">
+    <main>
+        <h2>Main Content</h2>
+
+    </main>
+
+    <aside>
+        <h2>Aside Content</h>
+
+    </aside>
+
+</section>
+
+
+<footer>
+    <h2>Footer Content</h2>
+
+    <p>
+        &copy; <span id="year"></span> | Responsive Layout Project
+    </p>
+    <p>
+        Last Modified:
+        <span id="lastModified"></span>
+    </p>
+</footer>
+
+<script>
+    // Dynamic Copyright Year
+    const currentYear = new Date().getFullYear();
+    document.getElementById("year").textContent = currentYear;
+
+    //Last Modified Date
+    document.getElementById("lastModified").textContent
+    document.lastModified;
+</script>
+
+</body>
+
 </html>

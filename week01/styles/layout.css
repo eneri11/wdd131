@@ -26,14 +26,11 @@
      margin: 0 auto;
  }
 
- /* =========================
-           HEADER
-        ========================== */
  header {
      background-color: var(--dark-bg);
      color: var(--text-light);
      padding: 2rem;
-     min-height: 140px;
+     min-height: 120px;
 
      display: flex;
      align-items: flex-start;
@@ -43,9 +40,6 @@
      font-size: 2rem;
  }
 
- /* =========================
-           NAVIGATION
-        ========================== */
  nav {
      background-color: var(--nav-bg);
  }
@@ -76,7 +70,8 @@
 
  nav a:hover,
  nav a:focus {
-     background-color: var(--hover-color);
+     text-decoration: underline;
+     text-decoration-color: yellow;
      color: #ffffff;
      outline: none;
  }
