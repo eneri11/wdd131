@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\GIT Repository clone\\wdd130\\MyFirstConsoleApp\\MyFirstConsoleApp.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\GIT Repository clone\\wdd131\\MyFirstConsoleApp\\MyFirstConsoleApp.csproj",
       "projectName": "MyFirstConsoleApp",
-      "projectPath": "C:\\Users\\ADMIN\\Desktop\\GIT Repository clone\\wdd130\\MyFirstConsoleApp\\MyFirstConsoleApp.csproj",
+      "projectPath": "C:\\Users\\ADMIN\\Desktop\\GIT Repository clone\\wdd131\\MyFirstConsoleApp\\MyFirstConsoleApp.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADMIN\\Desktop\\GIT Repository clone\\wdd130\\MyFirstConsoleApp\\obj\\",
+      "outputPath": "C:\\Users\\ADMIN\\Desktop\\GIT Repository clone\\wdd131\\MyFirstConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"
