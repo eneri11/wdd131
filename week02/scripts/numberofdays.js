@@ -1,7 +1,6 @@
 const numberOfDays = 6; // variable days in future setting
 const options = { weekday: "long" }; // Intl.DateTimeFormat vs. short, etc.
 
-
 const today = new Date();
 
 let todaystring = new Intl.DateTimeFormat("en-US", options).format(today);

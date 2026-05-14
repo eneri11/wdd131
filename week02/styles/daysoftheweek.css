@@ -17,30 +17,36 @@ body {
 .container {
     background: white;
     padding: 30px;
-    width: 400px;
+    width: 500px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    text-align: center;
+h2 {
+    text-align: left;
     margin-bottom: 20px;
     color: #2c3e50;
 }
 
+h1,
 #today {
+    text-align: center;
+    color: darkblue;
     margin-bottom: 20px;
-    font-size: 18px;
+}
+
+p {
+    background-color: #eee;
+    border: 1px solid #999;
+    padding: .35rem;
 }
 
 ul {
-    list-style: none;
+    list-style: disc;
+    padding-left: 40px;
 }
 
 li {
-    background: #e8f0fe;
-    margin-bottom: 10px;
-    padding: 12px;
-    border-radius: 8px;
-    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 5px;
 }
