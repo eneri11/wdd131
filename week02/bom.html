@@ -4,28 +4,46 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Future Days</title>
+
+    <title>Book of Mormon - Top 10</title>
+
     <meta name="author" content="[Irene Gavina Costales]">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://font.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    <link href="https://font.googleapis.com/css2?family=Poppins:wght@300;400;500; 700&display=swap"
       rel="stylesheet">
-    <link rel="stylesheet" href="styles/daysoftheweek.css">
+
+    <link rel="stylesheet" href="styles/bom.css">
 </head>
 
 <body>
 
-    <h1>📖 Book of Mormon - Top 10</h1>
+    <div class="container">
 
-    <main>
-        <label for="favchap">Enter Book and Chapter:
-        </label>
-        <input type="text" id="favchap" placeholder="Alma 5">
-        <button type="submit">Add Chapter</button>
-        <ul id="list"></ul>
-    </main>
+        <h1>📖 Book of Mormon - Top 10</h1>
+
+        <div class="card">
+
+            <label for="chapterInput">
+                Enter Book and Chapter:
+            </label>
+
+            <input type="text" id="chapterInput" placeholder="Alma 5">
+
+            <button id="addButton">
+                Add Chapter
+            </button>
+
+            <ul id="chapterList"></ul>
+
+        </div>
+
+    </div>
+
+    <script src="scripts/bom.js"></script>
+
 
 </body>
 

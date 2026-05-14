@@ -1,69 +1,89 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    background-color: #f3f3f3;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    font-family: Acme, Arial, sans-serif;
+    padding-top: 40px;
+}
+
+.container {
+    width: 420px;
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
 }
 
-main {
-    margin: 1rem auto;
-    border: 1px solid rgb(0 0 0 / 0.1);
-    padding: 1rem;
-    background-color: #ddd;
-    display: flex;
-    flex-direction: column;
+.card {
+    background-color: #dddddd;
+    padding: 20px;
+    border: 1px solid #bcbcbc;
 }
 
-input,
+label {
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 24px;
+    border: 2px solid #666;
+    margin-bottom: 15px;
+}
+
 button {
-    padding: 0.5rem;
+    width: 100%;
+    padding: 12px;
+    font-size: 22px;
+    cursor: pointer;
+    border: 1px solid #777;
+    background-color: #efefef;
+    margin-bottom: 25px;
 }
 
-button {
-    margin: 0.5rem;
-}
-
-.delete {
-    width: fit-content;
-}
-
-.input {
-    display: flex;
-    gap: 1rem;
-}
-
-.list {
-    padding: 0.5rem;
+button:hover {
+    background-color: #e0e0e0;
 }
 
 ul {
-    margin: 1rem;
     list-style: none;
 }
 
 li {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 12px;
+    padding: 12px 15px;
+    font-size: 28px;
+    font-weight: 500;
+    border: 1px solid #bbb;
 }
 
-@media only screen and (min-width: 32.5em) {
-    h1 {
-        font-size: 2rem;
-    }
+.delete-btn {
+    background: none;
+    border: none;
+    color: #ff3366;
+    font-size: 36px;
+    cursor: pointer;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
 
-    main {
-        width: 320px;
-    }
+.delete-btn:hover {
+    color: #cc0033;
 }
