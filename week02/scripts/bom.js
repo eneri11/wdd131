@@ -1,6 +1,6 @@
-const input = document.getElementById("chapterInput");
-const button = document.getElementById("addButton");
-const list = document.getElementById("chapterList");
+const input = document.querySelector('favchap');
+const button = document.querySelector('button');
+const list = document.querySelector('_________'); //Fill in the blank to reference the unordered list element.
 
 button.addEventListener("click", function () {
 
@@ -9,14 +9,14 @@ button.addEventListener("click", function () {
   if (chapter !== "") {
 
     // Create list item
-    const li = document.createElement("li");
+    const li = document.createElement('li');
 
     // Create text
     const chapterText = document.createElement("span");
     chapterText.textContent = chapter;
 
     // Create delete button
-    const deleteButton = document.createElement("button");
+    const deleteButton = document.createElement('button');
     deleteButton.textContent = "✖";
     deleteButton.classList.add("delete-btn");
 
