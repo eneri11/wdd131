@@ -35,7 +35,7 @@ header {
 }
 
 header h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 2rem;
 }
 
@@ -87,7 +87,7 @@ main {
 main h1 {
     text-align: center;
     margin: 1rem 0 2rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* GALLERY */
