@@ -4,10 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Philippines Country Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <h1>Philippines</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+
+            <picture>
+                <source srcset="imagesph/ph-icecream-large.webp" media="(min-width: 768px)">
+
+                <img src="imagesph/ph-icecream-small.webp" alt="Beatiful view of the Philippines"
+                  width="500" height="750">
+            </picture>
+
+            <section class="card data-card">
+                <h2>Data</h2>
+
+                <p><strong>Area:</strong> 300,000 sq km</p>
+                <p><strong>Population:</strong> 114 million</p>
+                <p><strong>Capital:</strong> Manila</p>
+                <p><strong>Languages:</strong> Filipino, English</p>
+                <p><strong>Currency:</strong> Philippines Peso</p>
+                <p><strong>Time Zone:</strong> UTC +8</p>
+                <p><strong>Calling Code:</strong> +63</p>
+            </section>
+
+            <section class="card weather-card">
+                <h2>Weather</h2>
+
+                <img src="imagesph/cloudy_weather.svg" alt="Weather Icon" class="weather-icon">
+
+                <p><strong>Temperature:</strong> <span id="temperature">9</span> °C</p>
+
+                <p><strong>Conditions:</strong> Cloudy</p>
+
+                <p><strong>Wind Speed:</strong> <span id="windspeed">5</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+            </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            copyright <span id="currentyear"></span> 🌴 Irene Gavina Costales 🌴 Philippines
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
 
 </body>
 
