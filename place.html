@@ -7,6 +7,10 @@
 
     <title>Philippines Country Page</title>
 
+    <meta name="description"
+      content="Discover information about the Philippines including weather, population, geography, and culture.">
+    <meta name="author" content="[Irene Gavina Costales]">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
@@ -19,18 +23,22 @@
 </head>
 
 <body>
+
     <header>
         <h1>Philippines</h1>
     </header>
 
     <main>
+
         <section class="hero">
 
             <picture>
-                <source srcset="imagesph/ph-icecream-large.webp" media="(min-width: 768px)">
+                <source media="(min-width: 768px)" srcset="imagesph/ph-island-large.webp">
 
-                <img src="imagesph/ph-icecream-small.webp" alt="Beatiful view of the Philippines"
-                  width="500" height="750">
+                <source media="(max-width: 767px)" srcset="imagesph/ph-island-small.webp">
+
+                <img src="imagesph/ph-island-small.webp"
+                  alt="Beautiful tropical landscape in the Philippines" width="500" height="750">
             </picture>
 
             <section class="card data-card">
@@ -48,13 +56,14 @@
             <section class="card weather-card">
                 <h2>Weather</h2>
 
-                <img src="imagesph/cloudy_weather.svg" alt="Weather Icon" class="weather-icon">
+                <img src="imagesph/weather1.svg" alt="Weather Icon" class="weather-icon">
 
                 <p><strong>Temperature:</strong> <span id="temperature">9</span> °C</p>
 
                 <p><strong>Conditions:</strong> Cloudy</p>
 
                 <p><strong>Wind Speed:</strong> <span id="windspeed">5</span> km/h</p>
+
                 <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
             </section>
 
@@ -63,7 +72,7 @@
 
     <footer>
         <p>
-            copyright <span id="currentyear"></span> 🌴 Irene Gavina Costales 🌴 Philippines
+            © <span id="currentyear"></span> 🌴 Your Name 🌴 Philippines
         </p>
 
         <p id="lastModified"></p>

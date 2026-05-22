@@ -8,21 +8,21 @@
         position: absolute;
         top: 30px;
         left: 30px;
-        width: 280px;
     }
 
     .weather-card {
         position: absolute;
         bottom: 30px;
         right: 30px;
-        width: 280px;
     }
 
+    /* Hide SVG icon in large view */
     .weather-icon {
         display: none;
     }
 
+    /* Pseudo-element requirement */
     .weather-card h2::after {
-        content: " ⛅ ";
+        content: " ⛅";
     }
 }
