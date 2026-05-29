@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Filtered Temple Album</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+
+            <h2>Temple Album</h2>
+
+            <button id="menuButton" aria-label="Navigation Menu">
+                ☰
+            </button>
+
+            <nav id="navMenu">
+                <a href="#" id="home">Home</a>
+                <a href="#" id="old">Old</a>
+                <a href="#" id="new">New</a>
+                <a href="#" id="large">Large</a>
+                <a href="#" id="small">Small</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <h1 id="pageTitle">Home</h1>
+
+        <div class="gallery"></div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            ©<span id="currentYear"></span>
+            ⛪ Irene Gavina Costales ⛪ Philippines
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
