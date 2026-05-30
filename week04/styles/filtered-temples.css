@@ -1,3 +1,5 @@
+/* MOBILE FIRST DESIGN */
+
 :root {
     --primary-color: #4b0b73;
     --secondary-color: #ffffff;
@@ -56,23 +58,18 @@ nav {
 }
 
 nav a {
-    color: white;
     text-decoration: none;
-    padding: .8rem;
+    color: white;
+    padding: 0.8rem;
     text-align: center;
     font-weight: bold;
-    transition: .3s;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
-    background: white;
+    background-color: white;
     color: var(--primary-color);
     border-radius: 5px;
-}
-
-nav a:focus {
-    outline: 3px solid white;
-    outline-offset: 3px;
 }
 
 .hide {
@@ -101,19 +98,15 @@ main h1 {
     gap: 2rem;
 }
 
-/* TEMPLE CARD */
+/* CARD */
 
 section {
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
     text-align: center;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, .15);
-    transition: transform .3s ease;
-}
-
-section:hover {
-    transform: scale(1.02);
+    padding-bottom: 1rem;
 }
 
 section img {
@@ -123,13 +116,14 @@ section img {
 }
 
 section h3 {
-    color: var(--primary-color);
-    padding-top: 1rem;
     font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    margin: 1rem 0;
 }
 
 section p {
-    padding: .3rem 1rem;
+    margin: 0.5rem 1rem;
+    line-height: 1.5;
 }
 
 /* FOOTER */
@@ -143,5 +137,5 @@ footer {
 }
 
 footer p {
-    margin: .3rem;
+    margin: 0.4rem 0;
 }
