@@ -72,7 +72,7 @@ const temples = [
     dedicated: "2019, March, 10",
     area: 41010,
     imageUrl:
-        "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-13009-main.jpg"
+        "images/exterior_grounds_rome_italy_temple.jpeg"
   },
 
   {
@@ -81,7 +81,7 @@ const temples = [
     dedicated: "1893, April, 6",
     area: 253000,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-37763-main.jpg"
+      "images/salt_lake_temple.jpeg"
   },
 
   {
@@ -90,7 +90,7 @@ const temples = [
     dedicated: "2010, June, 13",
     area: 29000,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/cebu-city-philippines-temple/cebu-city-philippines-temple-1101-main.jpg"
+      "images/philippines_cebu_temple.jpeg"
   }
 ];
 
