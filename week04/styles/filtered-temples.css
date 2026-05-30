@@ -63,7 +63,7 @@ nav a {
     padding: 0.8rem;
     text-align: center;
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
@@ -146,5 +146,5 @@ footer {
 }
 
 footer p {
-    margin: 0.3rem;
+    margin: 0.3rems;
 }

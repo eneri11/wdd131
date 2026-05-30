@@ -116,6 +116,8 @@ function displayTemples(filteredTemples) {
         const dedicated = document.createElement("p");
         const area = document.createElement("p");
 
+        image.setAttribute("loading", "lazy");
+
         image.src = temple.imageUrl;
         image.alt = `${temple.templeName} Temple`;
         image.loading = "lazy";
