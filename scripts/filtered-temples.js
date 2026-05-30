@@ -72,7 +72,7 @@ const temples = [
     dedicated: "2019, March, 10",
     area: 41010,
     imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-13009-main.jpg"
+        "https://churchofjesuschristtemples.org/rome-italy-temple/photographs/#Official-39"
   },
 
   {
