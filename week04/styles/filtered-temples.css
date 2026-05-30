@@ -63,18 +63,18 @@ nav a {
     padding: 0.8rem;
     text-align: center;
     font-weight: bold;
-    transition: 0.3s ease;
-}
-
-nav a:focus {
-    outline: 3px solid white;
-    outline-offset: 3px;
+    transition: 0.3s;
 }
 
 nav a:hover {
     background-color: white;
     color: var(--primary-color);
     border-radius: 5px;
+}
+
+nav a:focus {
+    outline: 3px solid white;
+    outline-offset: 3px;
 }
 
 .hide {
@@ -123,18 +123,16 @@ section img {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover;
 }
 
 section h3 {
     font-family: 'Poppins', sans-serif;
     color: var(--primary-color);
-    margin: 1rem 0;
+    padding-top: 1rem;
 }
 
 section p {
-    margin: 0.5rem 1rem;
-    line-height: 1.5;
+    padding: .3rem 1rem;
 }
 
 /* FOOTER */
@@ -148,5 +146,5 @@ footer {
 }
 
 footer p {
-    margin: 0.4rem 0;
+    margin: 0.3rem;
 }

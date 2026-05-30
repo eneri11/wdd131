@@ -97,6 +97,8 @@ const temples = [
 // SELECT HTML ELEMENT
 
 const gallery = document.querySelector(".gallery");
+console.log("Gallery:", gallery);
+console.log("Temple count:", temples.length);
 
 // CREATE TEMPLE CARDS
 
@@ -156,44 +158,40 @@ document.querySelector("#old").addEventListener("click", () => {
 
     pageTitle.textContent = "Old Temples";
 
-    const oldTemples = temples.filter(temple => {
-        return Number(temple.dedicated.split(",")[0]) < 1900;
-    });
-
-    displayTemples(oldTemples);
+    displayTemples(
+        temples.filter(
+            temple => Number(temple.dedicated.split(",")[0]) < 1900)
+        );
 });
 
 document.querySelector("#new").addEventListener("click", () => {
-
     pageTitle.textContent = "New Temples";
 
-    const newTemples = temples.filter(temple => {
-        return Number(temple.dedicated.split(",")[0]) > 2000;
-    });
-
-    displayTemples(newTemples);
+    displayTemples(
+        temples.filter(
+            temple => Number(temple.dedicated.split(",")[0]) > 2000
+        )
+    );
 });
 
 document.querySelector("#large").addEventListener("click", () => {
-
     pageTitle.textContent = "Large Temples";
 
-    const largeTemples = temples.filter(temple => {
-        return temple.area > 90000;
-    });
-
-    displayTemples(largeTemples);
+    displayTemples(
+        temples.filter(
+            temple => temple.area > 90000
+        )
+    );
 });
 
 document.querySelector("#small").addEventListener("click", () => {
-
     pageTitle.textContent = "Small Temples";
 
-    const smallTemples = temples.filter(temple => {
-        return temple.area < 10000;
-    });
-
-    displayTemples(smallTemples);
+    displayTemples(
+        temples.filter(
+            temple => temple.area < 10000
+        )
+    );
 });
 
 // FOOTER
@@ -217,11 +215,11 @@ menuButton.addEventListener("click", () => {
 
     navMenu.classList.toggle("hide");
 
-    if (navMenu.classList.contains("hide")) {
-        menuButton.textContent = "☰";
-    } else {
-        menuButton.textContent = "✖";
-    }
+    menuButton.textContent = 
+        navMenu.classList.contains("hide")
+        ? "☰"
+        : "✖";
+    });
 
     window.addEventListener("resize", () => {
 
@@ -231,8 +229,4 @@ menuButton.addEventListener("click", () => {
         navMenu.classList.add("hide");
         menuButton.textContent = "☰";
     }
-
-
-    });
-
 });
