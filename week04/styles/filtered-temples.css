@@ -66,6 +66,11 @@ nav a {
     transition: 0.3s ease;
 }
 
+nav a:focus {
+    outline: 3px solid white;
+    outline-offset: 3px;
+}
+
 nav a:hover {
     background-color: white;
     color: var(--primary-color);
@@ -101,18 +106,24 @@ main h1 {
 /* CARD */
 
 section {
+
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
     text-align: center;
-    padding-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
 }
 
 section img {
     width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
 }
 
 section h3 {

@@ -108,11 +108,17 @@ function displayTemples(filteredTemples) {
 
         const card = document.createElement("section");
 
+        const image = document.createElement("img");
         const name = document.createElement("h3");
         const location = document.createElement("p");
         const dedicated = document.createElement("p");
         const area = document.createElement("p");
-        const image = document.createElement("img");
+
+        image.src = temple.imageUrl;
+        image.alt = `${temple.templeName} Temple`;
+        image.loading = "lazy";
+        image.width = 400;
+        image.height = 250;
 
         name.textContent = temple.templeName;
 
@@ -122,15 +128,11 @@ function displayTemples(filteredTemples) {
 
         area.innerHTML = `<strong>Area:</strong> ${temple.area.toLocaleString()} sq ft`;
 
-        image.setAttribute("src", temple.imageUrl);
-        image.setAttribute("alt", temple.templeName);
-        image.setAttribute("loading", "lazy");
-
+        card.appendChild(image);
         card.appendChild(name);
         card.appendChild(location);
         card.appendChild(dedicated);
         card.appendChild(area);
-        card.appendChild(image);
 
         gallery.appendChild(card);
 
@@ -207,7 +209,9 @@ document.querySelector("#lastModified").textContent =
 const menuButton = document.querySelector("#menuButton");
 const navMenu = document.querySelector("#navMenu");
 
-navMenu.classList.add("hide");
+if (window.innerWidth < 768) {
+    navMenu.classList.add("hide");
+} 
 
 menuButton.addEventListener("click", () => {
 
@@ -218,5 +222,17 @@ menuButton.addEventListener("click", () => {
     } else {
         menuButton.textContent = "✖";
     }
+
+    window.addEventListener("resize", () => {
+
+    if (window.innerWidth >= 768) {
+        navMenu.classList.remove("hide");
+    } else {
+        navMenu.classList.add("hide");
+        menuButton.textContent = "☰";
+    }
+
+
+    });
 
 });
