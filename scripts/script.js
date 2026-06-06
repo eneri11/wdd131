@@ -14,3 +14,10 @@ products.forEach(p => {
   option.textContent = p.name; // REQUIRED: name as display
   select.appendChild(option);
 });
+
+// Footer Information
+document.getElementById("currentyear").textContent =
+  new Date().getFullYear();
+
+document.getElementById("lastModified").textContent =
+  `Last Modified: ${document.lastModified}`;
