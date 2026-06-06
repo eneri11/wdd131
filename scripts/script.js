@@ -6,18 +6,28 @@ const products = [
   { id: "jj-1969", name: "warp equalizer" }
 ];
 
-const select = document.getElementById("product");
+document.addEventListener("DOMContentLoaded", () => {
 
-products.forEach(p => {
-  const option = document.createElement("option");
-  option.value = p.id;      // REQUIRED: id as value
-  option.textContent = p.name; // REQUIRED: name as display
-  select.appendChild(option);
+  const select = document.getElementById("product");
+
+  if (select) {
+    products.forEach(product => {
+      const option = document.createElement("option");
+      option.value = product.id;
+      option.textContent = product.name;
+      select.appendChild(option);
+    });
+  }
+
+  const currentYear = document.getElementById("currentYear");
+  const lastModified = document.getElementById("lastModified");
+
+  if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+  }
+
+  if (lastModified) {
+    lastModified.textContent =
+      `Last Modified: ${document.lastModified}`;
+  }
 });
-
-// Footer Information
-document.getElementById("currentyear").textContent =
-  new Date().getFullYear();
-
-document.getElementById("lastModified").textContent =
-  `Last Modified: ${document.lastModified}`;
