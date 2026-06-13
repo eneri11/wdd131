@@ -9,6 +9,12 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .hero {
+        display: grid;
+        grid-template-columns:
+            1fr 1fr;
+    }
+
     .hero-text {
         position: absolute;
         top: 30%;

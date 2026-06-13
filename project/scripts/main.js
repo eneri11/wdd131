@@ -5,5 +5,10 @@ menuButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
 });
 
-const currentYear = new Date().getFullYear();
-console.log(`Current Year: ${currentYear}`);
+document.querySelector("#currentyear")
+.textContent =
+new Date().getFullYear();
+
+document.querySelector("#lastModified")
+.textContent =
+`Last Modified: ${document.lastModified}`;

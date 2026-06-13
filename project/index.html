@@ -41,49 +41,55 @@
     <main>
 
         <section class="hero">
-            <picture>
-                <source media="(min-width: 800px)" srcset="images/hero-large.webp">
-                <img src="images/hero-small.webp" alt="Beautiful Philippine beach" loading="eager">
-            </picture>
-
-            <div class="hero-text">
-                <h2>Discover the Beauty of the Philippines</h2>
-                <p>Explore beaches, mountains, and cultural destinations.</p>
-            </div>
+            <img src="images/hero.webp" alt="Beautiful Philippine Destination">
         </section>
 
-        <section class="featured">
+        <div class="hero-text">
+            <h2>Discover the Beauty of the Philippines</h2>
+            <p>Explore beaches, mountains, and cultural destinations.</p>
+        </div>
+        </section>
+
+        <section class="featured-destinations">
             <h2>Featured Destinations</h2>
-            <section class="featured">
-                <h2>Featured Destinations</h2>
 
-                <div class="card-container">
+            <div class="card-container">
 
-                    <article class="card">
-                        <img src="images/palawan.webp" alt="Palawan beach" loading="lazy">
-                        <h3>Palawan</h3>
-                        <p>Known for crystal-clear waters and limestone cliffs.</p>
-                    </article>
+                <article class="card">
+                    <img src="images/palawanhide.webp" alt="Palawan beach" loading="lazy">
+                    <h3>Palawan</h3>
+                    <p>Known for crystal-clear waters and limestone cliffs with stunning lagoons.
+                    </p>
+                </article>
 
-                    <article class="card">
-                        <img src="images/baguio.webp" alt="Baguio mountains" loading="lazy">
-                        <h3>Baguio</h3>
-                        <p>A cool mountain city famous for pine trees and parks.</p>
-                    </article>
-                    <article class="card">
-                        <img src="images/bohol.webp" alt="Chocolate Hills in Bohol" loading="lazy">
-                        <h3>Bohol</h3>
-                        <p>Home of the Chocolate Hills and tarsiers.</p>
-                    </article>
+                <article class="card">
+                    <img src="images/burnhampark_baguio.webp" alt="Baguio mountains" loading="lazy">
+                    <h3>Baguio</h3>
+                    <p>A cool mountain city famous for pine trees and parks.</p>
+                </article>
+                <article class="card">
+                    <img src="images/bohol.webp" alt="Chocolate Hills in Bohol" loading="lazy">
+                    <h3>Bohol</h3>
+                    <p>Home of the Chocolate Hills and tarsiers.</p>
+                </article>
 
-                </div>
-            </section>
+            </div>
+        </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 Explore Philippines</p>
-        <p><a href="references.html">References</a></p>
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Explore Philippines
+        </p>
+
+        <p id="lastModified"></p>
+
+        <a href="references.html">
+            References
+        </a>
     </footer>
 </body>
 

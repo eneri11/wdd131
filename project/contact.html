@@ -22,21 +22,22 @@
         <form id="contact-form">
 
             <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="fullname" required>
+            <input type="text" id="fullname" required>
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+
+            <input type="email" id="email" required>
 
             <label for="destination">Favorite Destination</label>
-            <select id="destination" name="destination">
+            <select id="destination">
                 <option value="Palawan">Palawan</option>
                 <option value="Baguio">Baguio</option>
                 <option value="Bohol">Bohol</option>
             </select>
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5"></textarea>
+            <textarea id="message" required></textarea>
 
-            <input type="submit" value="Send Message">
+            <button type="submit">Send Message</button>
 
         </form>
 
@@ -45,7 +46,17 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Explore Philippines</p>
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Explore Philippines
+        </p>
+
+        <p id="lastModified"></p>
+
+        <a href="references.html">
+            References
+        </a>
     </footer>
 
 </body>

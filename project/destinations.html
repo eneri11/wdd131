@@ -28,7 +28,7 @@
     </header>
 
     <main>
-        <section class="filter-buttons">
+        <section class="filters">
             <button id="all">All</button>
             <button id="beach">Beach</button>
             <button id="mountain">Mountain</button>
@@ -37,13 +37,24 @@
 
         <section>
             <h2>Tourist Destinations</h2>
-            <div id="destination-cards" class="card-container"></div>
+            <div id="destination-cards"></div>
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 Explore Philippines</p>
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Explore Philippines
+        </p>
+
+        <p id="lastModified"></p>
+
+        <a href="references.html">
+            References
+        </a>
+
     </footer>
 
 </body>

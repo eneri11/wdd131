@@ -2,19 +2,19 @@ const destinations = [
     {
         name: 'Palawan',
         category: 'Beach',
-        image: 'images/palawan.webp',
+        image: 'images/palawanhide.webp',
         description: 'Beautiful beaches and clear waters.'
     },
     {
         name: 'Baguio',
         category: 'Mountain',
-        image: 'images/baguio.webp',
+        image: 'images/park_baguio.webp',
         description: 'Cool climate and mountain scenery.'
     },
     {
         name: 'Vigan',
         category: 'Historical',
-        image: 'images/vigan.webp',
+        image: 'images/calesa_vigan.webp',
          description: 'Historic Spanish colonial town.'
     }
 ];
@@ -48,7 +48,6 @@ function displayDestinations(destinationList) {
     });
 }
 y === category
-        );
 
         displayDestinations(filteredPlaces);
    
