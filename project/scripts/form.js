@@ -8,4 +8,4 @@ contactForm.addEventListener('submit', event => {
     const fullname = document.querySelector('#fullname').value;
 
     formMessage.innerHTML = `
-        <p>Thank you, ${fullname}. Your message has b
+        <p>Thank you, ${fullname}. Your message has been sent.
