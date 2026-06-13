@@ -29,7 +29,7 @@
             ☰
         </button>
 
-        <nav>
+        <nav aria-label="Primary Navigation">
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="destinations.html">Destinations</a></li>
@@ -41,13 +41,16 @@
     <main>
 
         <section class="hero">
-            <img src="images/hero.webp" alt="Beautiful Philippine Destination">
-        </section>
 
-        <div class="hero-text">
-            <h2>Discover the Beauty of the Philippines</h2>
-            <p>Explore beaches, mountains, and cultural destinations.</p>
-        </div>
+            <img src="images/hero.webp" alt="Beautiful Philippine Destination" loading="eager">
+
+            <div class="hero-text">
+                <h2>Discover the Beauty of the Philippines</h2>
+                <p>
+                    Explore beaches, mountains, and cultural destinations.
+                </p>
+            </div>
+
         </section>
 
         <section class="featured-destinations">
@@ -56,22 +59,24 @@
             <div class="card-container">
 
                 <article class="card">
-                    <img src="images/palawanhide.webp" alt="Palawan beach" loading="lazy">
+                    <img src="images/palawanhide.webp" alt="Palawan beach" loading="lazy"
+                      width="400" height="250">
                     <h3>Palawan</h3>
                     <p>Known for crystal-clear waters and limestone cliffs with stunning lagoons.
                     </p>
                 </article>
 
                 <article class="card">
-                    <img src="images/burnhampark_baguio.webp" alt="Baguio mountains" loading="lazy">
-                    <h3>Baguio</h3>
-                    <p>A cool mountain city famous for pine trees and parks.</p>
-                </article>
-                <article class="card">
-                    <img src="images/chocolate-hills-bohol.webp.webp" alt="Chocolate Hills in Bohol"
+
+                    <img src="images/chocolate-hills-bohol.webp" alt="Chocolate Hills in Bohol"
                       loading="lazy">
+
                     <h3>Bohol</h3>
-                    <p>Home of the Chocolate Hills and tarsiers.</p>
+
+                    <p>
+                        Home of the Chocolate Hills and tarsiers.
+                    </p>
+
                 </article>
 
             </div>
@@ -88,10 +93,11 @@
 
         <p id="lastModified"></p>
 
-        <a href="references.html">
-            References
-        </a>
+        <p>
+            <a href="references.html">References</a>
+        </p>
     </footer>
+
 </body>
 
 </html>
