@@ -3,46 +3,98 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore Philippine destinations.">
+
+    <meta name="description"
+      content="Explore beautiful tourist destinations throughout the Philippines.">
+
     <title>Destinations | Explore Philippines</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 
+    <!-- JavaScript -->
+    <script src="scripts/main.js" defer></script>
     <script src="scripts/destinations.js" defer></script>
+
 </head>
 
 <body>
 
     <header>
+
         <h1>Explore Philippines</h1>
-        <nav>
+
+        <button id="menu-button" aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <nav aria-label="Primary Navigation">
+
             <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-                <li><a href="tips.html">Travel Tips</a></li>
-                <li><a href="contact.html">Contact</a></li>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="destinations.html">Destinations</a>
+                </li>
+
+                <li>
+                    <a href="tips.html">Travel Tips</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
             </ul>
+
         </nav>
+
     </header>
 
     <main>
+
         <section class="filters">
+
+            <h2>Filter Destinations</h2>
+
             <button id="all">All</button>
+
             <button id="beach">Beach</button>
+
             <button id="mountain">Mountain</button>
+
             <button id="historical">Historical</button>
+
         </section>
 
         <section>
+
             <h2>Tourist Destinations</h2>
-            <div id="destination-cards"></div>
+
+            <div id="destination-cards" class="card-container">
+            </div>
+
         </section>
 
     </main>
 
     <footer>
+
         <p>
             &copy;
             <span id="currentyear"></span>
@@ -51,9 +103,11 @@
 
         <p id="lastModified"></p>
 
-        <a href="references.html">
-            References
-        </a>
+        <p>
+            <a href="references.html">
+                References
+            </a>
+        </p>
 
     </footer>
 

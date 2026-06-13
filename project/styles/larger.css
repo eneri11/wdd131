@@ -1,28 +1,63 @@
 @media only screen and (min-width: 768px) {
 
+    /* ==========================
+       HEADER & NAVIGATION
+    ========================== */
+
+    #menu-button {
+        display: none;
+    }
+
     .navigation {
+        display: flex;
         flex-direction: row;
         justify-content: center;
+        gap: 2rem;
     }
+
+    /* ==========================
+       HERO SECTION
+    ========================== */
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .hero-text {
+        position: static;
+        background: none;
+        color: var(--text-color);
+        padding: 1rem;
+        text-align: left;
+    }
+
+    /* ==========================
+       DESTINATION CARDS
+    ========================== */
 
     .card-container {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .hero {
-        display: grid;
-        grid-template-columns:
-            1fr 1fr;
+    /* ==========================
+       CONTACT PAGE
+    ========================== */
+
+    .contact-section {
+        max-width: 800px;
+        margin: 0 auto;
     }
 
-    .hero-text {
-        position: absolute;
-        top: 30%;
-        left: 10%;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        padding: 2rem;
-        border-radius: 10px;
+    /* ==========================
+       FILTER BUTTONS
+    ========================== */
+
+    .filters {
+        justify-content: center;
     }
 
 }

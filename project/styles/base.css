@@ -1,3 +1,7 @@
+/* ==========================
+   CSS VARIABLES
+========================== */
+
 :root {
     --primary-color: #005f73;
     --secondary-color: #0a9396;
@@ -6,64 +10,103 @@
     --text-color: #222222;
 }
 
+/* ==========================
+   RESET
+========================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ==========================
+   BODY
+========================== */
+
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
 }
 
-:root {
-    --primary-color: #005f73;
-    --secondary-color: #0a9396;
-    --light-color: #ffffff;
-    --background-color: #f4f4f4;
-    --text-color: #222222;
+/* ==========================
+   TYPOGRAPHY
+========================== */
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
-}
+/* ==========================
+   HEADER
+========================== */
 
 header {
     background-color: var(--primary-color);
     color: var(--light-color);
     padding: 1rem;
+    text-align: center;
 }
 
-h1,
-h2,
-h3 {
-    font-family: 'Poppins', sans-serif;
+/* ==========================
+   MOBILE MENU BUTTON
+========================== */
+
+#menu-button {
+    background: none;
+    border: none;
+    color: var(--light-color);
+    font-size: 2rem;
+    cursor: pointer;
 }
+
+/* ==========================
+   NAVIGATION
+========================== */
 
 .navigation {
     list-style: none;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 1rem;
+    margin-top: 1rem;
+}
+
+.navigation.open {
+    display: flex;
 }
 
 .navigation a {
     color: var(--light-color);
     text-decoration: none;
+    font-weight: bold;
 }
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================
+   MAIN
+========================== */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ==========================
+   HERO
+========================== */
 
 .hero img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .hero-text {
@@ -71,9 +114,26 @@ h3 {
     text-align: center;
 }
 
-.featured {
+/* ==========================
+   FEATURED SECTION
+========================== */
+
+.featured-destinations,
+.travel-tips,
+.contact-section {
     padding: 2rem 1rem;
 }
+
+.featured-destinations h2,
+.travel-tips h2,
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* ==========================
+   CARDS
+========================== */
 
 .card-container {
     display: grid;
@@ -99,22 +159,40 @@ h3 {
     padding: 1rem;
 }
 
-.filter-buttons {
+/* ==========================
+   FILTER BUTTONS
+========================== */
+
+.filters {
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 1rem;
     padding: 2rem 1rem;
 }
+
+/* ==========================
+   BUTTONS
+========================== */
 
 button,
 input[type="submit"] {
     background-color: var(--secondary-color);
     color: var(--light-color);
     border: none;
+    border-radius: 5px;
     padding: 0.75rem 1rem;
     cursor: pointer;
-    border-radius: 5px;
 }
+
+button:hover,
+input[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+/* ==========================
+   FORMS
+========================== */
 
 form {
     display: grid;
@@ -128,11 +206,34 @@ input,
 select,
 textarea {
     padding: 0.75rem;
+    width: 100%;
 }
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================
+   FOOTER
+========================== */
 
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #005f73;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    margin-top: 2rem;
+}
+
+footer a {
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0.5rem 0;
 }

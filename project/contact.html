@@ -2,50 +2,131 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="Contact Explore Philippines">
-    <title>Contact</title>
 
+    <title>Contact | Explore Philippines</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
+    <!-- JavaScript -->
+    <script src="scripts/main.js" defer></script>
     <script src="scripts/form.js" defer></script>
+
 </head>
 
 <body>
 
     <header>
-        <h1>Contact Us</h1>
+
+        <h1>Explore Philippines</h1>
+
+        <button id="menu-button" aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <nav aria-label="Primary Navigation">
+
+            <ul class="navigation">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="destinations.html">Destinations</a>
+                </li>
+
+                <li>
+                    <a href="tips.html">Travel Tips</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
     </header>
+
     <main>
 
-        <form id="contact-form">
+        <section class="contact-section">
 
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" required>
+            <h2>Contact Us</h2>
 
-            <label for="email">Email</label>
+            <form id="contact-form">
 
-            <input type="email" id="email" required>
+                <label for="fullname">
+                    Full Name
+                </label>
 
-            <label for="destination">Favorite Destination</label>
-            <select id="destination">
-                <option value="Palawan">Palawan</option>
-                <option value="Baguio">Baguio</option>
-                <option value="Bohol">Bohol</option>
-            </select>
-            <label for="message">Message</label>
-            <textarea id="message" required></textarea>
+                <input type="text" id="fullname" name="fullname" required>
 
-            <button type="submit">Send Message</button>
+                <label for="email">
+                    Email
+                </label>
 
-        </form>
+                <input type="email" id="email" name="email" required>
 
-        <div id="form-message"></div>
+                <label for="destination">
+                    Favorite Destination
+                </label>
+
+                <select id="destination" name="destination">
+
+                    <option value="Palawan">
+                        Palawan
+                    </option>
+
+                    <option value="Baguio">
+                        Baguio
+                    </option>
+
+                    <option value="Bohol">
+                        Bohol
+                    </option>
+
+                </select>
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea id="message" name="message" rows="5" required>
+                </textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+            <div id="form-message"></div>
+
+        </section>
 
     </main>
 
     <footer>
+
         <p>
             &copy;
             <span id="currentyear"></span>
@@ -54,9 +135,12 @@
 
         <p id="lastModified"></p>
 
-        <a href="references.html">
-            References
-        </a>
+        <p>
+            <a href="references.html">
+                References
+            </a>
+        </p>
+
     </footer>
 
 </body>
