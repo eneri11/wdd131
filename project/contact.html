@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Explore Philippines">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+
+        <form id="contact-form">
+
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="destination">Favorite Destination</label>
+            <select id="destination" name="destination">
+                <option value="Palawan">Palawan</option>
+                <option value="Baguio">Baguio</option>
+                <option value="Bohol">Bohol</option>
+            </select>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <input type="submit" value="Send Message">
+
+        </form>
+
+        <div id="form-message"></div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Explore Philippines</p>
+    </footer>
+
+</body>
+
+</html>

@@ -4,11 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Explore beautiful tourist destinations in the Philippines.">
+    <title>Explore Philippines</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <div class="logo">
+            <h1>Explore Philippines</h1>
+        </div>
 
+        <button id="menu-button" aria-label="Open navigation menu">
+            ☰
+        </button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="tips.html">Travel Tips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/hero-large.webp">
+                <img src="images/hero-small.webp" alt="Beautiful Philippine beach" loading="eager">
+            </picture>
+
+            <div class="hero-text">
+                <h2>Discover the Beauty of the Philippines</h2>
+                <p>Explore beaches, mountains, and cultural destinations.</p>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2>Featured Destinations</h2>
+            <section class="featured">
+                <h2>Featured Destinations</h2>
+
+                <div class="card-container">
+
+                    <article class="card">
+                        <img src="images/palawan.webp" alt="Palawan beach" loading="lazy">
+                        <h3>Palawan</h3>
+                        <p>Known for crystal-clear waters and limestone cliffs.</p>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/baguio.webp" alt="Baguio mountains" loading="lazy">
+                        <h3>Baguio</h3>
+                        <p>A cool mountain city famous for pine trees and parks.</p>
+                    </article>
+                    <article class="card">
+                        <img src="images/bohol.webp" alt="Chocolate Hills in Bohol" loading="lazy">
+                        <h3>Bohol</h3>
+                        <p>Home of the Chocolate Hills and tarsiers.</p>
+                    </article>
+
+                </div>
+            </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Explore Philippines</p>
+        <p><a href="references.html">References</a></p>
+    </footer>
 </body>
 
 </html>
