@@ -23,17 +23,13 @@ const cardContainer = document.querySelector('#destination-cards');
 
 function displayDestinations(destinationList) {
 
-    cardContainer.innerHTML = destinationList.map(place => `
-        <article class="card">
-            <img src="${place.image}" alt="${place.name}" loading="lazy">
+            cards.innerHTML += `
+            <article class="card">
             <h3>${place.name}</h3>
-            <p>${place.category}</p>
             <p>${place.description}</p>
-            <button class="favorite-btn" data-name="${place.name}">
-                Save Favorite
-            </button>
-        </article>
-          `).join('');
+            <p>${place.category}</p>
+            </article>
+            `;
 
     const favoriteButtons = document.querySelectorAll('.favorite-btn');
 
@@ -58,7 +54,7 @@ function filterDestinations(category) {
     } else {
 
         const filteredPlaces = destinations.filter(place =>
-            place.categor }
+            place.category }
 }
 
 displayDestinations(destinations);
