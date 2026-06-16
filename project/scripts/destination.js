@@ -79,6 +79,11 @@ function filterDestinations(category) {
             place.category === category
         );
 
+        const beaches =
+            destinations.filter(place =>
+            place.category === 'Beach'
+    );
+
         displayDestinations(filteredPlaces);
     }
 }
@@ -93,6 +98,8 @@ displayDestinations(destinations);
 // ===============================
 // BUTTON EVENTS
 // ===============================
+
+
 document.querySelector('#all').addEventListener('click', () => {
     filterDestinations('All');
 });
