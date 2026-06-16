@@ -103,6 +103,14 @@ main {
    HERO
 ========================== */
 
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
 .hero img {
     width: 100%;
     height: auto;
@@ -142,6 +150,8 @@ main {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     background-color: var(--light-color);
     border-radius: 10px;
     overflow: hidden;
