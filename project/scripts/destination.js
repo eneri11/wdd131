@@ -31,6 +31,7 @@ function displayDestinations(destinationList) {
     cardContainer.innerHTML = '';
 
     destinationList.forEach(place => {
+        console.log(place.name);
 
         cardContainer.innerHTML += `
             <article class="card">
@@ -68,8 +69,11 @@ function displayDestinations(destinationList) {
 function filterDestinations(category) {
 
     if (category === 'All') {
+
         displayDestinations(destinations);
-    } else {
+
+    } 
+    else {
 
         const filteredPlaces = destinations.filter(place =>
             place.category === category
@@ -104,3 +108,33 @@ document.querySelector('#mountain').addEventListener('click', () => {
 document.querySelector('#historical').addEventListener('click', () => {
     filterDestinations('Historical');
 });
+
+document.querySelectorAll('.favorite-btn').forEach(button => {
+
+    button.addEventListener('click', () => {
+
+        const favoritePlace = button.dataset.name;
+
+        localStorage.setItem(
+            'favoriteDestination',
+            favoritePlace
+        );
+
+        alert(
+            `${favoritePlace} saved as favorite destination!`
+        );
+    });
+
+});
+
+const savedFavorite =
+    localStorage.getItem('favoriteDestination');
+
+if (savedFavorite) {
+
+    const favoriteMessage =
+        document.querySelector('#favorite-message');
+
+    favoriteMessage.textContent =
+        `Your favorite destination is ${savedFavorite}.`;
+}

@@ -84,6 +84,8 @@ header {
     color: var(--light-color);
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 .navigation a:hover {
@@ -136,7 +138,7 @@ main {
 .travel-tips h2,
 .contact-section h2 {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 /* ==========================
