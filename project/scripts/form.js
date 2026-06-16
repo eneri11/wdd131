@@ -1,9 +1,10 @@
 const contactForm = document.querySelector('#contact-form');
 const formMessage = document.querySelector('#form-message');
 
-contactForm.addEventListener('submit', event => {
+contactForm.addEventListener('submit'), event => {
 
     event.preventDefault();
+}
 
     const fullname = document.querySelector('#fullname').value;
 
