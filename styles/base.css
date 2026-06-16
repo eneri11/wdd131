@@ -255,3 +255,22 @@ footer p {
         max-width: 250px;
     }
 }
+
+/* =========================================
+   TRAVEL TIPS SECTION
+========================================= */
+
+.travel-tips {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.travel-tips ul {
+    margin-top: 1rem;
+    padding-left: 2rem;
+}
+
+.travel-tips li {
+    margin-bottom: 1rem;
+}
